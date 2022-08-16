@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">password manager</string>
+    <string name="password_manager">Password Manager</string>
+    <string name="enter_account">Enter Account</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="insert">Insert</string>
+    <string name="view_all">View All</string>
 </resources>

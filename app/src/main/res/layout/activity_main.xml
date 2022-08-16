@@ -4,19 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="0dp"
+    android:layout_marginStart="0dp"
     android:layout_marginTop="20dp"
-    android:background="#00BCD4"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView5"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="20dp"
-        android:text="Password Manager"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/password_manager"
         android:textSize="50sp" />
 
     <EditText
@@ -26,10 +32,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Enter Account"
+        android:hint="@string/enter_account"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#263238" />
 
     <EditText
         android:id="@+id/user"
@@ -38,10 +46,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Enter Username"
+        android:hint="@string/enter_username"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#263238" />
 
     <EditText
         android:id="@+id/pwd"
@@ -50,18 +60,20 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#263238" />
 
     <Button
         android:id="@+id/insert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:backgroundTint="#FF9800"
-        android:text="Insert" />
+        android:backgroundTint="#00BCD4"
+        android:text="@string/insert" />
 
     <Button
         android:id="@+id/view"
@@ -69,5 +81,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="#FFEB3B"
-        android:text="View All" />
+        android:text="@string/view_all" />
+
 </LinearLayout>
