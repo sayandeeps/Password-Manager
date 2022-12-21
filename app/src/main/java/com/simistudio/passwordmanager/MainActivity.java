@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         view=findViewById(R.id.view);
 
         g= new password_database(this);
-        //SQLiteDatabase db =g.getReadableDatabase();
+//        SQLiteDatabase db =g.getReadableDatabase();
 
         insert.setOnClickListener(new View.OnClickListener() {
 

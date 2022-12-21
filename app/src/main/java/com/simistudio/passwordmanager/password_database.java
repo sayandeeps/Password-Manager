@@ -21,8 +21,7 @@ public class password_database extends SQLiteOpenHelper {
 
     @Override
     public void   onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("drop table if exists user");
-        onCreate(sqLiteDatabase);
+
 
     }
     public boolean insert_data(String account, String username, String password){
